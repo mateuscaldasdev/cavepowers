@@ -1,0 +1,18 @@
+{
+  "name": "cavepowers",
+  "description": "Marketplace for CavePowers — Superpowers methodology + Caveman token compression",
+  "owner": {
+    "name": "mateuscaldasdev"
+  },
+  "plugins": [
+    {
+      "name": "cavepowers",
+      "description": "Superpowers methodology + Caveman token compression. Brain big. Mouth small.",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "mateuscaldasdev"
+      }
+    }
+  ]
+}
