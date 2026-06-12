@@ -2,16 +2,18 @@
   "name": "cavepowers",
   "version": "1.0.0",
   "description": "Superpowers methodology + Caveman token compression. Brain big. Mouth small.",
-  "author": "mateuscaldasdev",
+  "author": {
+    "name": "Mateus Caldas",
+    "email": "mateuscaldasassessoria@gmail.com"
+  },
+  "homepage": "https://github.com/mateuscaldasdev/cavepowers",
+  "repository": "https://github.com/mateuscaldasdev/cavepowers",
   "license": "MIT",
-  "skills": [
-    "skills/cavepowers",
-    "skills/brainstorming",
-    "skills/systematic-debugging",
-    "skills/test-driven-development",
-    "skills/writing-plans",
-    "skills/executing-plans",
-    "skills/subagent-driven-development",
-    "skills/dispatching-parallel-agents"
+  "keywords": [
+    "skills",
+    "tdd",
+    "debugging",
+    "token-compression",
+    "workflows"
   ]
 }
