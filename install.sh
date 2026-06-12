@@ -13,9 +13,13 @@ for skill in "${skills[@]}"; do
   curl -fsSL "$REPO_URL/skills/$skill/SKILL.md" -o "$PLUGIN_DIR/skills/$skill/SKILL.md"
 done
 
+mkdir -p "$PLUGIN_DIR/.claude-plugin"
 mkdir -p "$PLUGIN_DIR/hooks"
-curl -fsSL "$REPO_URL/plugin.json" -o "$PLUGIN_DIR/plugin.json"
-curl -fsSL "$REPO_URL/hooks/session-start.js" -o "$PLUGIN_DIR/hooks/session-start.js"
 
-echo "✓ CavePowers installed."
+curl -fsSL "$REPO_URL/.claude-plugin/plugin.json" -o "$PLUGIN_DIR/.claude-plugin/plugin.json"
+curl -fsSL "$REPO_URL/hooks/hooks.json" -o "$PLUGIN_DIR/hooks/hooks.json"
+curl -fsSL "$REPO_URL/hooks/run-hook.cmd" -o "$PLUGIN_DIR/hooks/run-hook.cmd"
+curl -fsSL "$REPO_URL/hooks/session-start" -o "$PLUGIN_DIR/hooks/session-start"
+
+echo "CavePowers installed."
 echo "  Type /cavepowers to activate. Brain big. Mouth small."

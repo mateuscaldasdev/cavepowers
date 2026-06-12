@@ -12,9 +12,13 @@ foreach ($skill in $skills) {
     Invoke-WebRequest "$repoUrl/skills/$skill/SKILL.md" -OutFile "$pluginDir\skills\$skill\SKILL.md"
 }
 
+New-Item -ItemType Directory -Force -Path "$pluginDir\.claude-plugin" | Out-Null
 New-Item -ItemType Directory -Force -Path "$pluginDir\hooks" | Out-Null
-Invoke-WebRequest "$repoUrl/plugin.json" -OutFile "$pluginDir\plugin.json"
-Invoke-WebRequest "$repoUrl/hooks/session-start.js" -OutFile "$pluginDir\hooks\session-start.js"
 
-Write-Host "✓ CavePowers installed."
+Invoke-WebRequest "$repoUrl/.claude-plugin/plugin.json" -OutFile "$pluginDir\.claude-plugin\plugin.json"
+Invoke-WebRequest "$repoUrl/hooks/hooks.json" -OutFile "$pluginDir\hooks\hooks.json"
+Invoke-WebRequest "$repoUrl/hooks/run-hook.cmd" -OutFile "$pluginDir\hooks\run-hook.cmd"
+Invoke-WebRequest "$repoUrl/hooks/session-start" -OutFile "$pluginDir\hooks\session-start"
+
+Write-Host "CavePowers installed."
 Write-Host "  Type /cavepowers to activate. Brain big. Mouth small."
