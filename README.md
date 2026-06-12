@@ -8,12 +8,12 @@ Fusion plugin for Claude Code: structured engineering workflows from [Superpower
 
 **Windows (PowerShell):**
 ```powershell
-irm https://raw.githubusercontent.com/mateuscaldasassessoria/cavepowers/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/mateuscaldasdev/cavepowers/main/install.ps1 | iex
 ```
 
 **Unix/Mac:**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/mateuscaldasassessoria/cavepowers/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/mateuscaldasdev/cavepowers/main/install.sh | bash
 ```
 
 ## Usage

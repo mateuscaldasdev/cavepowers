@@ -2,7 +2,7 @@
 set -e
 
 PLUGIN_DIR="$HOME/.claude/plugins/cavepowers"
-REPO_URL="https://raw.githubusercontent.com/mateuscaldasassessoria/cavepowers/main"
+REPO_URL="https://raw.githubusercontent.com/mateuscaldasdev/cavepowers/main"
 
 echo "Installing CavePowers..."
 

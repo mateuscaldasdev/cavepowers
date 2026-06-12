@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $pluginDir = "$env:USERPROFILE\.claude\plugins\cavepowers"
-$repoUrl = "https://raw.githubusercontent.com/mateuscaldasassessoria/cavepowers/main"
+$repoUrl = "https://raw.githubusercontent.com/mateuscaldasdev/cavepowers/main"
 
 Write-Host "Installing CavePowers..."
 
